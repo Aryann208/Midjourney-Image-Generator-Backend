@@ -9,7 +9,7 @@ import dalleRoutes from './routes/dalleRoutes.js';
 dotenv.config();
 
 const app = express();
-app.use(cors({"origin":"https://midjourney-image-generator-backend.onrender.com"}));
+app.use(cors({"origin":"https://midjourney-prompt-image-generator.vercel.app/"}));
 app.use(express.json({ limit: '50mb' }));
 
 app.use('/api/v1/post', postRoutes);
